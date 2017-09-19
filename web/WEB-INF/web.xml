@@ -4,12 +4,16 @@
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>sait.cprg352.LoginServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>MainPageServlet</servlet-name>
+        <servlet-class>sait.cprg352.MainPageServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>LoginServlet</servlet-name>
+        <servlet-name>MainPageServlet</servlet-name>
         <url-pattern>/logout</url-pattern>
     </servlet-mapping>
     <session-config>
