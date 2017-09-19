@@ -13,6 +13,7 @@
     </head>
     <body>
         <h1>Main Page</h1>
-        Hello, ${name}   <input type="button" value="Log Out">
+        Hello, ${username}   
+        <a href= "logout">Log Out</a>
     </body>
 </html>

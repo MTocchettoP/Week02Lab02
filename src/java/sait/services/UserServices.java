@@ -11,15 +11,17 @@ package sait.services;
  */
 public class UserServices {
     
-    private static String userName = "admin";
-    private static String password = "password";
+    private String[] userNames = {"adam", "betty"};
+    private String password = "password";
     
-    public static boolean loging(String userName, String password){
+    public  boolean loging(String userName, String password){
         boolean isValid = false;
         
-        if(UserServices.userName.equals(userName))
-            if(UserServices.password.equals(password))
+        for(String user : userNames)
+            if(user.equals(userName))
+                if(this.password.equals(password))
                 isValid = true;
+            
         return isValid;
     }
 }
